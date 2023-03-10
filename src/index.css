@@ -56,6 +56,60 @@ html {
   font-weight: 700;
 }
 
+
+/* Navigation */
+
+.nav{
+  background: #252525;
+  min-height: 80px;
+  padding: 20px 0;
+}
+.nav_banner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo_nav{
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav_logo_container img{
+    width: 75px;
+    height: auto;
+
+}
+
+.box_responsive{
+  display: none;
+}
+.box_responsive img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.input_search_nav_container {
+  padding: 4px 0;
+  margin-right: 20px;
+  position: relative;
+}
+.input_search_nav_container input {
+  padding: 5px 0;  
+}
+.input_search_nav_container img{
+  position: absolute;
+  left: -25px;
+  bottom: 5px;
+  border: 1px solid white;
+  border-radius: 50px 0 0 50px;
+  width: 27px;
+  height: auto;
+}
+
+/* End of Navigation */
+
 .ville_selection {
   margin: 20px 0;
 }
@@ -88,12 +142,14 @@ html {
 .Banner_foreCast {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   overflow: hidden;
   position: relative;
 }
 
 
 @media screen and (max-width:420px) {
+
   .box {
     width: 100%;
     height: auto;
@@ -107,4 +163,10 @@ html {
     overflow: hidden;
   }
 
+  .nav_logo_container img{
+    width: 35px;
+    height: auto;
+
+}
+ 
 }
